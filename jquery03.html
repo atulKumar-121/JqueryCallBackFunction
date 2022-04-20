@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Jquery Call Functions </h2>
+<div id="hello">Click Me</div>
+<div id="bye">Hide Me</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+
+$("#hello").click(function(){
+  alert("Hello");
+});
+
+$("#bye").click(function(){
+  $("#bye").hide(function(){
+  alert("Bye");
+  });
+});
+
+
+</script>
+</body>
+</html>
